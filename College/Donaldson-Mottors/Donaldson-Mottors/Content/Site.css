@@ -1,0 +1,85 @@
+﻿/* Set padding to keep content from hitting the edges */
+.body-content {
+    margin-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+/* Adds the Background */
+body {
+    background-color: #312B4C; /*adds the blue of the company*/
+    color: #F3F5FA;
+    font-weight: bold;
+}
+
+/* Footer | lets me change colour and make the footer look how I want it to look*/
+footer {
+    background-color: #272256;
+    color: white;
+    width: 100%;
+    padding: 15px 20px;
+    text-align: center;
+}
+
+/*||||||||||||||||||||||||||||||*/
+/*These feilds were crated to allow me to create the footer I wanted*/
+html, body {
+    height: 100%;
+    margin: 0;
+}
+.body-content {
+    flex: 1;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+footer {
+    width: 100%;
+}
+/*||||||||||||||||||||||||||||||*/
+
+/* NAVBAR BACKGROUND */
+.navbar {
+    background-color: #272256 !important;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+/*Nav/footer bar image*/
+.brand-image {
+    border: 3px solid #3E5FAF;
+    border-radius: 16px;
+
+}
+/*app buttons*/
+.btn-primary {
+    background-color: #3E5FAF !important;
+    border-color: #3E5FAF !important;
+    color: #FFFFFF !important;
+}
+
+    .btn-primary:hover {
+        background-color: #2F4F97 !important;
+        border-color: #2F4F97 !important;
+    }
+
+/*for any modal used*/
+.PopUp-modal {
+    background-color: #272256; /* dark background */
+    color: white;
+    border: none;
+}

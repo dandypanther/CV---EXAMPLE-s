@@ -1,0 +1,106 @@
+﻿@model IEnumerable<Donaldson_Mottors.Models.Booking>
+
+@{
+    ViewBag.Title = "CustomerIndex";
+}
+
+<h2>My Bookings</h2>
+
+<p>
+    <a href="@Url.Action("Create", "Bookings")" class="btn btn-primary">
+        Create a new Booking
+    </a>
+    |
+    <a href="@Url.Action("MyInvoices", "Invoices")" class="btn btn-primary">
+        View My Invoices
+    </a>
+    |
+    <a href="@Url.Action("ViewJobHistory", "Jobs")" class="btn btn-primary">
+        View Job History
+    </a>
+</p>
+<table class="table text-white">
+    <tr>
+        <!--Date of Booking-->
+        <th>
+            @Html.DisplayNameFor(model => model.DateOfBooking)
+        </th>
+        <!--Job Description-->
+        <th>
+            @Html.DisplayNameFor(model => model.JobDescription)
+        </th>
+        <!--Make of Vehicle-->
+        <th>
+            @Html.DisplayNameFor(model => model.Vehicle.Make)
+        </th>
+        <!--Completion Status-->
+        <th>
+            @Html.DisplayNameFor(model => model.CompletionStatus)
+        </th>
+
+        <!--Total Cost-->
+        <th>
+            @Html.DisplayNameFor(model => model.TotalCost)
+        </th>
+        <!--Amount Paid-->
+        <th>
+            @Html.DisplayNameFor(model => model.AmountPaid)
+        </th>
+        <!--Status-->
+        <th>
+            @Html.DisplayNameFor(model => model.Status)
+        </th>
+        <th>Actions</th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.DateOfBooking)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.JobDescription)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Vehicle.Make)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CompletionStatus)
+        </td>
+
+        <td>
+            £@Html.DisplayFor(modelItem => item.TotalCost)
+        </td>
+        <td>
+            £@Html.DisplayFor(modelItem => item.AmountPaid)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Status)
+        </td>
+        <td>
+
+            @{
+                var payment = item.Payment.FirstOrDefault();
+            }
+
+            @if (payment != null)
+            {
+                if (payment.PaymentDateTime > DateTime.Now.AddHours(-48) && item.DateOfBooking > payment.PaymentDateTime)
+                {
+                    <br />
+                    <a href="@Url.Action("Delete", "Bookings", new { id = item.BookingId })" class="btn btn-primary">
+                        Cancel Booking
+                    </a>
+                    
+                }
+                else
+                {
+                    <p>Cancellation period expired.</p>
+                }
+            }
+
+        </td>
+    </tr>
+}
+
+</table>

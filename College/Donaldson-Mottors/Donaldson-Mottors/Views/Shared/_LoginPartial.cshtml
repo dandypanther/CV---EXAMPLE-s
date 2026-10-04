@@ -1,0 +1,34 @@
+﻿@using Microsoft.AspNet.Identity
+@using Donaldson_Mottors.Models
+<!--Added Code to display User's name instead of Username-->
+@{
+    var userId = User.Identity.GetUserId(); //get userId
+    var db = new DonaldsonMottorsDbContext(); //local db
+
+    var name =
+        db.Users.OfType<Customer>().FirstOrDefault(u => u.Id == userId)?.Name
+        ?? db.Users.OfType<Staff>().FirstOrDefault(u => u.Id == userId)?.Name
+        ?? User.Identity.GetUserName(); //find the Users name
+}
+
+@if (Request.IsAuthenticated)
+{
+    using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm", @class = "navbar-right" }))
+    {
+        @Html.AntiForgeryToken()
+
+        <ul class="navbar-nav navbar-right">
+            <li>
+                @Html.ActionLink("Hello " + name /*Display Name*/ + "!", "Index", "Manage", routeValues: null, htmlAttributes: new { title = "Manage", @class = "nav-link" })
+            </li>
+            <li><a class="nav-link" href="javascript:document.getElementById('logoutForm').submit()">Log off</a></li>
+        </ul>
+    }
+}
+else
+{
+    <ul class="navbar-nav navbar-right">
+        <li>@Html.ActionLink("Register", "Register", "Account", routeValues: null, htmlAttributes: new { id = "registerLink", @class = "nav-link" })</li>
+        <li>@Html.ActionLink("Log in", "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink", @class = "nav-link" })</li>
+    </ul>
+}

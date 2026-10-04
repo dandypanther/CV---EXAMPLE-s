@@ -1,0 +1,121 @@
+﻿@model Donaldson_Mottors.Models.Invoice
+
+@{
+    ViewBag.Title = "ViewInvoice";
+}
+
+<div class="text-center">
+    <h4>Invoice Details</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <!--Company Name and information-->
+        <dt>
+            <u>Donaldson Mottors</u>
+        </dt>
+        <dt>
+            @Html.DisplayNameFor(model => model.CompanyAddress)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CompanyAddress)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.CompanyInfo)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CompanyInfo)
+        </dd>
+        <!--Booking Id and Date-->
+        <dt>
+            Booking Id:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Booking.BookingId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Booking.DateOfBooking):
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Booking.DateOfBooking)
+        </dd>
+        <!--Customer Name, Address, contact info-->
+        <dt>
+            @Html.DisplayNameFor(model => model.CustomerName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CustomerName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CustomerAddress)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CustomerAddress)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CustomerContactInfo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CustomerContactInfo)
+        </dd>
+        <!--Job information-->
+        <dt>
+            Job Description:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Booking.JobDescription)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.NoHrs) 
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NoHrs) Hours
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.LabourCost)
+        </dt>
+
+        <dd>
+            £@Model.LabourCost.ToString("F2")
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ProductCost)
+        </dt>
+
+        <dd>
+            £@Model.ProductCost.ToString("F2")
+        </dd>
+        <dt>
+            Products Bought:
+        </dt>
+        @foreach (var job in Model.Booking.Jobs)
+        {
+            foreach (var stock in job.JobType.StockUseds)
+            {
+                <p>@stock.Stock.ProductName: £@(stock.Stock.Price * stock.Quantity)</p>
+            }
+        }
+        <dt>
+            @Html.DisplayNameFor(model => model.TotalCost)
+        </dt>
+
+        <dd>
+            £@Model.TotalCost.ToString("F2")
+        </dd>
+    </dl>
+</div>
+<a href="@Url.Action("DownloadInvoice", "Invoices", new { id = Model.InvoiceNo })" class="btn btn-primary">
+    Download to PDF
+</a>
+<p>
+    @Html.ActionLink("Back to List", "Index")
+</p>

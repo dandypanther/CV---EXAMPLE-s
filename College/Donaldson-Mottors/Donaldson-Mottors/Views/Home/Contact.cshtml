@@ -1,0 +1,32 @@
+﻿@{
+    ViewBag.Title = "Donalson Motors";
+}
+
+<main aria-labelledby="title">
+    <h2 id="title">Contact Us:</h2>
+    <h3>How to Contact us...</h3>
+
+
+    <address>
+        <strong>Address:</strong><br />
+        145 Clydebank Road, <br />
+        Glasgow United Kingdom,  <br />
+        G81 2RX  <br />
+
+    </address>
+
+    <address>
+        <strong>Phone:</strong>   +44 1410 4852 08<br />
+        <strong>Email:</strong>   <a href="mailto:ContactUs@DonaldsonMottors.com">ContactUs@DonaldsonMottors.com</a><br />
+    </address>
+
+    <script async
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAr7AlCIeQVkzUYsbF8Dfy2RYNy3HFZ8_Q&libraries=maps,marker&loading=async&callback=initMap">
+    </script>
+    <gmp-map center="55.897597206019086, -4.299561706949702" zoom="17" map-id="DEMO_MAP_ID" style="height: 400px">
+        <gmp-advanced-marker position="55.897597206019086, -4.299561706949702"
+                             title="Donalson Motors, GLA"></gmp-advanced-marker>
+
+    </gmp-map>
+
+</main>

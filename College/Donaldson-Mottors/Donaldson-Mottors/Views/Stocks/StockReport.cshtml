@@ -1,0 +1,21 @@
+﻿@model IEnumerable<Donaldson_Mottors.Models.Stock>
+@{
+    Layout = "~/Views/Shared/_LayoutReport.cshtml";
+}
+        <h1>Stock Report</h1>
+        <table border="1" style="width:100%; border-collapse:collapse; text-align:left;" ">
+            <tr>
+                <th><u>Product Name:</u></th>
+                <th><u>Price:</u></th>
+                <th><u>Stock Level:</u></th>
+            </tr>
+
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td style="text-align: left;">@item.ProductName</td>
+                    <td>£@item.Price.ToString("F2")</td>
+                    <td>@item.StockLevel</td>
+                </tr>
+            }
+        </table>

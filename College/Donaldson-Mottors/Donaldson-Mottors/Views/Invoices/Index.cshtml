@@ -1,0 +1,51 @@
+﻿@model IEnumerable<Donaldson_Mottors.Models.Invoice>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Bookings to Invoice</h2>
+
+<p>
+    <!--Link to a page that will allow staff to Raise Bookings-->
+    @Html.ActionLink("Raise Booking", "BookingsToRaise")
+</p>
+<table class="table text-white">
+    <tr>
+        <!--Display Invoice Details-->
+        <th>
+            @Html.DisplayNameFor(model => model.Booking.DateOfBooking)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LabourCost)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ProductCost)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TotalCost)
+        </th>
+        <th>Actions:</th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Booking.DateOfBooking)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LabourCost)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ProductCost)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TotalCost)
+        </td>
+        <td>
+            @Html.ActionLink("View Invoice Details", "ViewInvoice", new { id = item.InvoiceNo })
+        </td>
+    </tr>
+}
+
+</table>

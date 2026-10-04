@@ -1,0 +1,65 @@
+﻿@model IEnumerable<Donaldson_Mottors.Models.Job>
+
+@{
+    ViewBag.Title = "ViewJobHistoryStaff";
+}
+@if (TempData["UpdateStatusSuccess"] != null)
+{
+    <div class="alert alert-success">
+        You Job Status Updated
+    </div>
+}
+<h2>View Job History</h2>
+
+<<table class="table text-white">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Booking.DateOfBooking)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.JobType.JobDescription)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.StaffAssigned.Name)
+        </th>
+        <th>
+            Completion Status:
+        </th>
+    </tr>
+
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Booking.DateOfBooking)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.JobType.JobDescription)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StaffAssigned.Name)
+            </td>
+            <td>
+                @if (item.CompletionDate != null)
+                {
+                    <p>Complete</p>
+                }
+                else
+                {
+                    <p>Incomplete</p>//if no completion date exists job is not complete
+                }
+            </td>
+            <td>
+                @using (Html.BeginForm("UpdateStatus", "Jobs", FormMethod.Post))
+                {
+                    @Html.Hidden("id", item.JobId)
+                    <button type="submit" class="btn btn-primary">
+                        Update Status
+                    </button>
+                }
+            </td>
+        </tr>
+    }
+
+</table>

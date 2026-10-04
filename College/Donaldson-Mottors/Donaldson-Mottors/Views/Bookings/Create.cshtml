@@ -1,0 +1,129 @@
+﻿@model Donaldson_Mottors.Models.CustomerCreateBookingViewModel
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Booking Creation Form</h2>
+
+@using (Html.BeginForm())
+{
+    
+    @Html.AntiForgeryToken()
+    <!--Booking from-->
+    <div class="form-horizontal">
+        <h4>Create a Booking</h4>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <!--Booking DateTime-->
+        <div class="form-group">
+            @Html.LabelFor(model => model.DateOfBooking, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.DateOfBooking, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.DateOfBooking, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <!--IsJobType1-->
+        <div class="form-group">
+            Oil and Filter Service <!--Job Description-->
+            <div class="col-md-10">
+                @Html.CheckBoxFor(model => model.IsJobType1)
+            </div>
+        </div>
+
+        <!--IsJobType2-->
+        <div class="form-group">
+            Front Brake Discs and Pads<!--Job Description-->
+            <div class="col-md-10">
+                @Html.CheckBoxFor(model => model.IsJobType2)
+            </div>
+        </div>
+
+        <!--IsJobType3-->
+        <div class="form-group">
+            Inspection and Headlight Bulb Replacement <!--Job Description-->
+            <div class="col-md-10">
+                @Html.CheckBoxFor(model => model.IsJobType3)
+            </div>
+        </div>
+
+        <!--IsJobType4-->
+        <div class="form-group">
+            Diagnose Misfire and Replace Spark Plugs <!--Job Description-->
+            <div class="col-md-10">
+                @Html.CheckBoxFor(model => model.IsJobType4)
+            </div>
+        </div>
+
+        <!--IsJobType5-->
+        <div class="form-group">
+            Fit Two All‑Season Tyres and Balance <!--Job Description-->
+            <div class="col-md-10">
+                @Html.CheckBoxFor(model => model.IsJobType5)
+            </div>
+        </div>
+
+        <!--IsJobType6-->
+        <div class="form-group">
+            Replace all four tires and Wheel alignment <!--Job Description-->
+            <div class="col-md-10">
+                @Html.CheckBoxFor(model => model.IsJobType6)
+            </div>
+        </div>
+
+        <!--IsJobType7-->
+        <div class="form-group">
+            Replace Battery and Electrical system check <!--Job Description-->
+            <div class="col-md-10">
+                @Html.CheckBoxFor(model => model.IsJobType7)
+            </div>
+        </div>
+
+        <!--IsJobType8-->
+        <div class="form-group">
+            Air conditioning re-gas and leak inspection <!--Job Description-->
+            <div class="col-md-10">
+                @Html.CheckBoxFor(model => model.IsJobType8)
+            </div>
+        </div>
+
+        <!--IsJobType9-->
+        <div class="form-group">
+            Rear Brake Discs and Pads <!--Job Description-->
+            <div class="col-md-10">
+                @Html.CheckBoxFor(model => model.IsJobType9)
+            </div>
+        </div>
+
+        <!--IsJobType10-->
+        <div class="form-group">
+            Timing belt and water pump Replacement <!--Job Description-->
+            <div class="col-md-10">
+                @Html.CheckBoxFor(model => model.IsJobType10)
+            </div>
+        </div>
+    </div>
+
+    <!--List of Customer Vehicles-->
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.VehicleRegNO, "VehicleRegNO", htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.DropDownList("VehicleRegNO", null, htmlAttributes: new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.VehicleRegNO, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" value="Create" class="btn btn-primary" />
+        </div>
+    </div>
+
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index") |
+    @Html.ActionLink("Add Vehicle", "Create", "Vehicles")
+</div>

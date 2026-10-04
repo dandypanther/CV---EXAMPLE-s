@@ -1,0 +1,55 @@
+﻿
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Pay for your Booking</h2>
+<hr />
+<div class="d-flex justify-content-center" style="padding-top: 60px;">
+    <div class="card" style="width: 50rem; background-color: #272256;">
+        <img class="card-img-top" src="~/Images/Garage.jpg" alt="Logo">
+        <div class="card-body">
+            <h5 class="card-title"><strong>Payment Details</strong>:</h5>
+            <p class="card-text">
+                Total Cost: £@ViewBag.TotalCost | Date and Time Of Booking: @ViewBag.DateOfBooking
+                <br />Vehicle Registration Number: @ViewBag.VehRegNo | Description of Jobs to be completed: @ViewBag.JobDescription
+            </p>
+            <p class="card-text">Your Booking is almost ready to complete, we just require you to pay for your slot.<br />You can Either pay in full now, or a 25% deposit now and the rest later.</p>
+            <div class="row"><p>Pay in full: £@ViewBag.TotalCost | Pay Deposit: £@ViewBag.DepositCost | You will only be able to cancel bookings for up to 48 hours after paying (Unless Booking Date has Passed, in which you may not cancel).</p></div>
+            @using (Html.BeginForm("Create", "Payments", FormMethod.Post))
+            {
+                @Html.AntiForgeryToken()
+
+                
+
+                <!-- Pay Full-->
+                <button type="submit"
+                        name="actionType"
+                        value="Full"
+                        formaction="@Url.Action("Create", "Payments", new { bookingId = ViewBag.BookingId })"
+                        class="btn btn-success w-100">
+                    Pay Full Amount
+                </button>
+
+                <!-- Pay Deposite -->
+                <button type="submit"
+                        name="actionType"
+                        value="Deposit"
+                        formaction="@Url.Action("Create", "Payments", new { bookingId = ViewBag.BookingId })"
+                        class="btn btn-primary w-100">
+                    Pay Deposit
+                </button>
+                <p> | </p>
+                <button type="submit"
+                        name="actionType"
+                        value="Cancel"
+                        formaction="@Url.Action("Create", "Payments", new { bookingId = ViewBag.BookingId })"
+                        class="btn btn-danger w-100">
+                    Cancel Booking
+                </button>
+
+            }
+        </div>
+    </div>
+</div>
+

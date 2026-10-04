@@ -1,0 +1,9 @@
+﻿/*Donaldson Mottors stylesheet, adds colour to the pages*/
+/*for any modal used*/
+.PopUp-modal {
+    background-color: #272256; /* dark background */
+    color: white;
+    border: none;
+}
+
+

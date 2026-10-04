@@ -1,0 +1,62 @@
+﻿@model IEnumerable<Donaldson_Mottors.Models.Stock>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Stock:</h2>
+
+<p>
+    <a href="@Url.Action("Create", "Stocks")" class="btn btn-primary">
+    Create Product
+    </a>
+    |
+    <a href="@Url.Action("DownloadStockReport", "Stocks")" class="btn btn-primary">
+        Download PDF
+    </a>
+</p>
+<table class="table text-white">
+    <tr>
+
+        <th>
+            @Html.DisplayNameFor(model => model.ProductName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Price)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.StockLevel)
+        </th>
+        <th>
+            Name of Supplier:
+        </th>
+        <th>
+            Actions:
+        </th>
+
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+
+        <td>
+            @Html.DisplayFor(modelItem => item.ProductName)
+        </td>-
+        <td>
+            £@item.Price.ToString("F2")
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.StockLevel)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Supplier.SupplierName)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id = item.StockId }) |
+            @Html.ActionLink("Details", "Details", new { id = item.StockId }) |
+            @Html.ActionLink("Delete", "Delete", new { id = item.StockId })
+        </td>
+    </tr>
+}
+
+</table>

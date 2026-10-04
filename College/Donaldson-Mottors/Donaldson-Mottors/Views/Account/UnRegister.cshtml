@@ -1,0 +1,100 @@
+﻿@model Donaldson_Mottors.Models.Customer
+
+@{
+    ViewBag.Title = "UnRegister";
+}
+
+<h2>UnRegister</h2>
+
+<h3>Are you sure you want to Unregister?</h3>
+<div>
+    <h4>Customer</h4>
+    <hr />
+    <dl class="dl-horizontal">
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Street)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Street)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Town)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Town)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Postcode)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Postcode)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TelephoneNo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TelephoneNo)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+<div class="form-actions no-color">
+    <a href="#" data-bs-toggle="modal" data-bs-target="#stockLow" class="btn btn-primary">Unregister</a>|
+    @Html.ActionLink("Back to List", "Index", "Home")
+    @Html.HiddenFor(model => model.Id)
+
+    <!--modal used to notify stock Controller of low stock-->
+    <div class="modal fade" id="stockLow" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content" style="background-color: #272256;">
+
+                <div class="modal-header " style="background-color: #272256;">
+                    <h5 class="modal-title">Unregister Account</h5>
+                </div>
+
+                <div class="modal-body" style="background-color: #312B4C;">
+                    <p>Warning! This Action can't be undone. You will lose all your Accounts Data!<br />Are you sure you want to unregister?</p>
+                </div>
+
+                <div class="modal-footer" style="background-color: #272256;">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">
+                        Cancel
+                    </button>
+                    <input type="submit" value="Unregister" class="btn btn-primary" />
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+    }
+</div>

@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="@Url.Action("Index", "Home")">
+                <img src="@Url.Content("~/Images/logo.jpg")" 
+                     alt="Donaldson Mottors"
+                     style="width:85px; height:auto; border-radius:35px;" />
+            </a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" title="Toggle navigation" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse d-sm-inline-flex justify-content-between">
+                <ul class="navbar-nav flex-grow-1">
+                    <li>@Html.ActionLink("Home", "Index", "Home", new { area = "" }, new { @class = "nav-link" })</li>
+                    <li>@Html.ActionLink("About", "About", "Home", new { area = "" }, new { @class = "nav-link" })</li>
+                    <li>@Html.ActionLink("Contact", "Contact", "Home", new { area = "" }, new { @class = "nav-link" })</li>
+                    <!--Role based Links bellow-->
+                    @if (!User.IsInRole("Customer"))
+                    {
+
+
+
+
+                        if (User.IsInRole("Mechanic") || User.IsInRole("Manager") || User.IsInRole("Admin")) //for Managers and Mechanics only
+                        {
+                            <li>@Html.ActionLink("Booking Index", "Index", "Bookings", new { area = "" }, new { @class = "nav-link" })</li>
+                        }
+                        if (User.IsInRole("Stock-Controller") || User.IsInRole("Manager") || User.IsInRole("Admin")) //for Managers and Stock Controllers only
+                        {
+                            <li>@Html.ActionLink("Stock Index", "Index", "Stocks", new { area = "" }, new { @class = "nav-link" })</li>
+                            <li>@Html.ActionLink("Supplier Index", "Index", "Suppliers", new { area = "" }, new { @class = "nav-link" })</li>
+                        }
+                        if (User.IsInRole("Accounts-Clerk") || User.IsInRole("Manager") || User.IsInRole("Mechanic") || User.IsInRole("Admin")) //for Managers and Account clerks and Mechanics only
+                        {
+                            <li>@Html.ActionLink("Customer Index", "Index", "Customers", new { area = "" }, new { @class = "nav-link" })</li>
+                        }
+                        if (User.IsInRole("Manager") || User.IsInRole("Admin")) //for Managers and Account clerks only
+                        {
+                            <li>@Html.ActionLink("Staff Index", "Index", "Staffs", new { area = "" }, new { @class = "nav-link" })</li>
+                        }
+                        if (User.IsInRole("Mechanic") || User.IsInRole("Manager") || User.IsInRole("Admin")|| User.IsInRole("Stock-Controller") || User.IsInRole("Accounts-Clerk"))
+                        {
+                            <li>@Html.ActionLink("Invoices", "Index", "Invoices", new { area = "" }, new { @class = "nav-link" })</li>
+                        }
+                    }
+                    else //for Customers Only
+                    {
+                        <li>@Html.ActionLink("Create Booking", "Create", "Bookings", new { area = "" }, new { @class = "nav-link" })</li>
+                        <li>@Html.ActionLink("My Bookings", "CustomerIndex", "Bookings", new { area = "" }, new { @class = "nav-link" })</li>
+                        <li>@Html.ActionLink("My Job History", "ViewJobHistory", "Jobs", new { area = "" }, new { @class = "nav-link" })</li>
+                        <li>@Html.ActionLink("My Invoices", "MyInvoices", "Invoices", new { area = "" }, new { @class = "nav-link" })</li>
+                    }
+
+                </ul>
+                @Html.Partial("_LoginPartial")
+            </div>
+</div>
+    </nav>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+
+    </div>
+
+    <footer>
+        <img src="@Url.Content("~/Images/logo.jpg")"
+             alt="DonaldsonMottors"
+             style="width:5%; height:auto; border-radius:35px;" class="brand-image">
+        <br />
+        <p>&copy; @DateTime.Now.Year - Donaldson Mottors Developed by Grant E Dunnington</p>
+    </footer>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

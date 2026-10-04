@@ -1,0 +1,68 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+@if (TempData["ChangeDetailsAsCustomerSuccess"] != null || TempData["ChangeDetailsAsStaffSuccess"] != null)
+{
+    <div class="alert alert-success">
+        Your Details have been Successfully Updated!!
+    </div>
+}
+@if (TempData["CreateBookingSuccess"] != null)
+{
+    <div class="alert alert-success">
+        Your Booking has Been Created!!
+    </div>
+}
+@if (TempData["CreateBookingCancel"] != null)
+{
+    <div class="alert alert-success">
+        Your Booking has Been Cancelled!!
+    </div>
+}
+@if (ViewBag.Notify == true && (User.IsInRole("Stock-Controller") || User.IsInRole("Manager") || User.IsInRole("Admin")))
+{
+    //triggers the modal
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var popup = new bootstrap.Modal(document.getElementById('stockLow'));
+            popup.show();
+        });</script>
+}
+<main>
+    <section class="row" aria-labelledby="aspnetTitle">
+        <h1 id="title">Welcome To Donaldson Mottors</h1>
+        <p class="lead">
+            We are a Glasgows Finest Mottor Shop, feel free to make a booking if you require a Service.<br /> Our Services include: Oil change, Belt Replacements, etc...
+            <br />Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br />
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<br />
+            It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.<br />
+            It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        </p>
+
+    </section>
+
+
+</main>
+
+<!--modal used to notify stock Controller of low stock-->
+<div class="modal fade" id="stockLow" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content" style="background-color: #272256;">
+
+            <div class="modal-header " style="background-color: #272256;">
+                <h5 class="modal-title">Unregister</h5>
+            </div>
+
+            <div class="modal-body" style="background-color: #312B4C;">
+                <p>@ViewBag.Notifymsg</p>
+            </div>
+
+            <div class="modal-footer" style="background-color: #272256;">
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">
+                    Close
+                </button>
+            </div>
+
+        </div>
+    </div>
+</div>

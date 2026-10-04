@@ -1,0 +1,230 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\30514225\\Documents\\Donaldson-Mottors-19May-3\\Donaldson-Mottors\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A670A3BE-96B1-438C-B93A-8C4385C08149}|Donaldson-Mottors\\Donaldson-Mottors.csproj|c:\\users\\30514225\\documents\\donaldson-mottors-19may-3\\donaldson-mottors\\donaldson-mottors\\models\\viewmodels\\manageviewmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A670A3BE-96B1-438C-B93A-8C4385C08149}|Donaldson-Mottors\\Donaldson-Mottors.csproj|solutionrelative:donaldson-mottors\\models\\viewmodels\\manageviewmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A670A3BE-96B1-438C-B93A-8C4385C08149}|Donaldson-Mottors\\Donaldson-Mottors.csproj|c:\\users\\30514225\\documents\\donaldson-mottors-19may-3\\donaldson-mottors\\donaldson-mottors\\controllers\\managecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A670A3BE-96B1-438C-B93A-8C4385C08149}|Donaldson-Mottors\\Donaldson-Mottors.csproj|solutionrelative:donaldson-mottors\\controllers\\managecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A670A3BE-96B1-438C-B93A-8C4385C08149}|Donaldson-Mottors\\Donaldson-Mottors.csproj|c:\\users\\30514225\\documents\\donaldson-mottors-19may-3\\donaldson-mottors\\donaldson-mottors\\controllers\\customerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A670A3BE-96B1-438C-B93A-8C4385C08149}|Donaldson-Mottors\\Donaldson-Mottors.csproj|solutionrelative:donaldson-mottors\\controllers\\customerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A670A3BE-96B1-438C-B93A-8C4385C08149}|Donaldson-Mottors\\Donaldson-Mottors.csproj|c:\\users\\30514225\\documents\\donaldson-mottors-19may-3\\donaldson-mottors\\donaldson-mottors\\views\\manage\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A670A3BE-96B1-438C-B93A-8C4385C08149}|Donaldson-Mottors\\Donaldson-Mottors.csproj|solutionrelative:donaldson-mottors\\views\\manage\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A670A3BE-96B1-438C-B93A-8C4385C08149}|Donaldson-Mottors\\Donaldson-Mottors.csproj|c:\\users\\30514225\\documents\\donaldson-mottors-19may-3\\donaldson-mottors\\donaldson-mottors\\models\\viewmodels\\accountviewmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A670A3BE-96B1-438C-B93A-8C4385C08149}|Donaldson-Mottors\\Donaldson-Mottors.csproj|solutionrelative:donaldson-mottors\\models\\viewmodels\\accountviewmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A670A3BE-96B1-438C-B93A-8C4385C08149}|Donaldson-Mottors\\Donaldson-Mottors.csproj|c:\\users\\30514225\\documents\\donaldson-mottors-19may-3\\donaldson-mottors\\donaldson-mottors\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A670A3BE-96B1-438C-B93A-8C4385C08149}|Donaldson-Mottors\\Donaldson-Mottors.csproj|solutionrelative:donaldson-mottors\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A670A3BE-96B1-438C-B93A-8C4385C08149}|Donaldson-Mottors\\Donaldson-Mottors.csproj|c:\\users\\30514225\\documents\\donaldson-mottors-19may-3\\donaldson-mottors\\donaldson-mottors\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A670A3BE-96B1-438C-B93A-8C4385C08149}|Donaldson-Mottors\\Donaldson-Mottors.csproj|solutionrelative:donaldson-mottors\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A670A3BE-96B1-438C-B93A-8C4385C08149}|Donaldson-Mottors\\Donaldson-Mottors.csproj|C:\\Users\\30514225\\Documents\\Donaldson-Mottors-19May-3\\Donaldson-Mottors\\donaldson-mottors\\views\\stocks\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A670A3BE-96B1-438C-B93A-8C4385C08149}|Donaldson-Mottors\\Donaldson-Mottors.csproj|solutionrelative:donaldson-mottors\\views\\stocks\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A670A3BE-96B1-438C-B93A-8C4385C08149}|Donaldson-Mottors\\Donaldson-Mottors.csproj|C:\\Users\\30514225\\Documents\\Donaldson-Mottors-19May-3\\Donaldson-Mottors\\donaldson-mottors\\models\\donaldsonmottorsdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A670A3BE-96B1-438C-B93A-8C4385C08149}|Donaldson-Mottors\\Donaldson-Mottors.csproj|solutionrelative:donaldson-mottors\\models\\donaldsonmottorsdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A670A3BE-96B1-438C-B93A-8C4385C08149}|Donaldson-Mottors\\Donaldson-Mottors.csproj|C:\\Users\\30514225\\Documents\\Donaldson-Mottors-19May-3\\Donaldson-Mottors\\donaldson-mottors\\controllers\\stockscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A670A3BE-96B1-438C-B93A-8C4385C08149}|Donaldson-Mottors\\Donaldson-Mottors.csproj|solutionrelative:donaldson-mottors\\controllers\\stockscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A670A3BE-96B1-438C-B93A-8C4385C08149}|Donaldson-Mottors\\Donaldson-Mottors.csproj|C:\\Users\\30514225\\Documents\\Donaldson-Mottors-19May-3\\Donaldson-Mottors\\donaldson-mottors\\models\\staff.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A670A3BE-96B1-438C-B93A-8C4385C08149}|Donaldson-Mottors\\Donaldson-Mottors.csproj|solutionrelative:donaldson-mottors\\models\\staff.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A670A3BE-96B1-438C-B93A-8C4385C08149}|Donaldson-Mottors\\Donaldson-Mottors.csproj|c:\\users\\30514225\\documents\\donaldson-mottors-19may-3\\donaldson-mottors\\donaldson-mottors\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A670A3BE-96B1-438C-B93A-8C4385C08149}|Donaldson-Mottors\\Donaldson-Mottors.csproj|solutionrelative:donaldson-mottors\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "DonaldsonMottorsDBContext.cs",
+              "DocumentMoniker": "C:\\Users\\30514225\\Documents\\Donaldson-Mottors-19May-3\\Donaldson-Mottors\\Donaldson-Mottors\\Models\\DonaldsonMottorsDBContext.cs",
+              "RelativeDocumentMoniker": "Donaldson-Mottors\\Models\\DonaldsonMottorsDBContext.cs",
+              "ToolTip": "C:\\Users\\30514225\\Documents\\Donaldson-Mottors-19May-3\\Donaldson-Mottors\\Donaldson-Mottors\\Models\\DonaldsonMottorsDBContext.cs",
+              "RelativeToolTip": "Donaldson-Mottors\\Models\\DonaldsonMottorsDBContext.cs",
+              "ViewState": "AgIAAJ4BAAAAAAAAAAAlwGoBAABVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-29T13:48:07.966Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AccountViewModels.cs",
+              "DocumentMoniker": "C:\\Users\\30514225\\Documents\\Donaldson-Mottors-19May-3\\Donaldson-Mottors\\Donaldson-Mottors\\Models\\ViewModels\\AccountViewModels.cs",
+              "RelativeDocumentMoniker": "Donaldson-Mottors\\Models\\ViewModels\\AccountViewModels.cs",
+              "ToolTip": "C:\\Users\\30514225\\Documents\\Donaldson-Mottors-19May-3\\Donaldson-Mottors\\Donaldson-Mottors\\Models\\ViewModels\\AccountViewModels.cs",
+              "RelativeToolTip": "Donaldson-Mottors\\Models\\ViewModels\\AccountViewModels.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAArwGcAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-20T13:08:42.208Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ManageViewModels.cs",
+              "DocumentMoniker": "C:\\Users\\30514225\\Documents\\Donaldson-Mottors-19May-3\\Donaldson-Mottors\\Donaldson-Mottors\\Models\\ViewModels\\ManageViewModels.cs",
+              "RelativeDocumentMoniker": "Donaldson-Mottors\\Models\\ViewModels\\ManageViewModels.cs",
+              "ToolTip": "C:\\Users\\30514225\\Documents\\Donaldson-Mottors-19May-3\\Donaldson-Mottors\\Donaldson-Mottors\\Models\\ViewModels\\ManageViewModels.cs",
+              "RelativeToolTip": "Donaldson-Mottors\\Models\\ViewModels\\ManageViewModels.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAwwDgAAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-20T13:01:31.052Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ManageController.cs",
+              "DocumentMoniker": "C:\\Users\\30514225\\Documents\\Donaldson-Mottors-19May-3\\Donaldson-Mottors\\Donaldson-Mottors\\Controllers\\ManageController.cs",
+              "RelativeDocumentMoniker": "Donaldson-Mottors\\Controllers\\ManageController.cs",
+              "ToolTip": "C:\\Users\\30514225\\Documents\\Donaldson-Mottors-19May-3\\Donaldson-Mottors\\Donaldson-Mottors\\Controllers\\ManageController.cs",
+              "RelativeToolTip": "Donaldson-Mottors\\Controllers\\ManageController.cs",
+              "ViewState": "AgIAAPAAAAAAAAAAAAAtwAIBAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-20T13:02:22.536Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\30514225\\Documents\\Donaldson-Mottors-19May-3\\Donaldson-Mottors\\Donaldson-Mottors\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "Donaldson-Mottors\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\30514225\\Documents\\Donaldson-Mottors-19May-3\\Donaldson-Mottors\\Donaldson-Mottors\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "Donaldson-Mottors\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAAJQAAAAAAAAAAAAgwJ8AAABRAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-20T13:23:40.656Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\30514225\\Documents\\Donaldson-Mottors-19May-3\\Donaldson-Mottors\\Donaldson-Mottors\\Views\\Account\\Register.cshtml",
+              "RelativeDocumentMoniker": "Donaldson-Mottors\\Views\\Account\\Register.cshtml",
+              "ToolTip": "C:\\Users\\30514225\\Documents\\Donaldson-Mottors-19May-3\\Donaldson-Mottors\\Donaldson-Mottors\\Views\\Account\\Register.cshtml",
+              "RelativeToolTip": "Donaldson-Mottors\\Views\\Account\\Register.cshtml",
+              "ViewState": "AgIAADYAAAAAAAAAAAAAAD0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-20T13:07:43.266Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\30514225\\Documents\\Donaldson-Mottors-19May-3\\Donaldson-Mottors\\Donaldson-Mottors\\Views\\Manage\\Index.cshtml",
+              "RelativeDocumentMoniker": "Donaldson-Mottors\\Views\\Manage\\Index.cshtml",
+              "ToolTip": "C:\\Users\\30514225\\Documents\\Donaldson-Mottors-19May-3\\Donaldson-Mottors\\Donaldson-Mottors\\Views\\Manage\\Index.cshtml",
+              "RelativeToolTip": "Donaldson-Mottors\\Views\\Manage\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGcAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-20T14:15:35.521Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CustomersController.cs",
+              "DocumentMoniker": "C:\\Users\\30514225\\Documents\\Donaldson-Mottors-19May-3\\Donaldson-Mottors\\Donaldson-Mottors\\Controllers\\CustomersController.cs",
+              "RelativeDocumentMoniker": "Donaldson-Mottors\\Controllers\\CustomersController.cs",
+              "ToolTip": "C:\\Users\\30514225\\Documents\\Donaldson-Mottors-19May-3\\Donaldson-Mottors\\Donaldson-Mottors\\Controllers\\CustomersController.cs",
+              "RelativeToolTip": "Donaldson-Mottors\\Controllers\\CustomersController.cs",
+              "ViewState": "AgIAAKAAAAAAAAAAAAAAALMAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-20T13:20:40.854Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\30514225\\Documents\\Donaldson-Mottors-19May-3\\Donaldson-Mottors\\Donaldson-Mottors\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Donaldson-Mottors\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\30514225\\Documents\\Donaldson-Mottors-19May-3\\Donaldson-Mottors\\Donaldson-Mottors\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Donaldson-Mottors\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-19T11:40:04.907Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "StocksController.cs",
+              "DocumentMoniker": "C:\\Users\\30514225\\Documents\\Donaldson-Mottors-19May-3\\Donaldson-Mottors\\Donaldson-Mottors\\Controllers\\StocksController.cs",
+              "RelativeDocumentMoniker": "Donaldson-Mottors\\Controllers\\StocksController.cs",
+              "ToolTip": "C:\\Users\\30514225\\Documents\\Donaldson-Mottors-19May-3\\Donaldson-Mottors\\Donaldson-Mottors\\Controllers\\StocksController.cs",
+              "RelativeToolTip": "Donaldson-Mottors\\Controllers\\StocksController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABcAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-19T11:36:06.883Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Staff.cs",
+              "DocumentMoniker": "C:\\Users\\30514225\\Documents\\Donaldson-Mottors-19May-3\\Donaldson-Mottors\\Donaldson-Mottors\\Models\\Staff.cs",
+              "RelativeDocumentMoniker": "Donaldson-Mottors\\Models\\Staff.cs",
+              "ToolTip": "C:\\Users\\30514225\\Documents\\Donaldson-Mottors-19May-3\\Donaldson-Mottors\\Donaldson-Mottors\\Models\\Staff.cs",
+              "RelativeToolTip": "Donaldson-Mottors\\Models\\Staff.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABIAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-19T10:10:43.837Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\30514225\\Documents\\Donaldson-Mottors-19May-3\\Donaldson-Mottors\\Donaldson-Mottors\\Views\\Stocks\\Index.cshtml",
+              "RelativeDocumentMoniker": "Donaldson-Mottors\\Views\\Stocks\\Index.cshtml",
+              "ToolTip": "C:\\Users\\30514225\\Documents\\Donaldson-Mottors-19May-3\\Donaldson-Mottors\\Donaldson-Mottors\\Views\\Stocks\\Index.cshtml",
+              "RelativeToolTip": "Donaldson-Mottors\\Views\\Stocks\\Index.cshtml",
+              "ViewState": "AgIAACYAAAAAAAAAAAAqwC4AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-19T10:08:14.798Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
